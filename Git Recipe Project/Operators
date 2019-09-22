@@ -1,0 +1,41 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Nov 18 19:02:32 2015
+
+@author: Ben
+"""
+
+class Recipe:
+    def __init__(self, name, ing_count, ing, measure, units):
+        self.n = name
+        self.c = ing_count
+        self.i = ing
+        self.m = measure
+        self.u = units
+        
+    def input_recipe():    
+        n = raw_input("Name of Recipe: ")
+
+        c = input("How many Ingredients?: ")
+    
+    
+        i = list()
+        m = list()
+        u = list()
+        
+        for n in range (0,c):
+            add_ing = raw_input("Ingredient " + str(i+1) + ": ")
+            i.append(add_ing)
+            
+            add_measure = raw_input("Input amount of Ingredient, Number only: ")
+            m.append(add_measure)
+            
+            add_unit = raw_input("Input Unit of Measure (Oz, Cups, Tsp, Tblspn, Count: ")
+            u.append(add_unit)
+        return n,c,i,m,u
+        
+
+
+
+
+
